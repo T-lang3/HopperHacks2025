@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture with Fade to Black and Dot Reveal</title>
+  <style>
+    #video {
+      width: 100%;
+      max-width: 600px;
+    }
+    #canvas {
+      border: 1px solid black;
+    }
+    #fadeBtn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Take Picture, Place Dots, and Fade to Black</h1>
+
+  <!-- Video element to display the camera feed -->
+  <video id="video" autoplay></video>
+
+  <!-- Button to capture picture -->
+  <button id="captureBtn">Take Picture</button>
+
+    <!-- Dot customization controls -->
+    <label for="dotSize">Dot Size:</label>
+    <input type="range" id="dotSize" min="1" max="20" value="5">
+    <br>
+    <label for="dotColor">Dot Color:</label>
+    <input type="color" id="dotColor" value="#ff0000">
+  <!-- Canvas to display the captured image and allow dot placement -->
+  <canvas id="canvas"></canvas>
+
+  <!-- Button to fade picture to black -->
+  <button id="fadeBtn">Fade to Black</button>
+  <script src="hopper.js"></script>
+</body>
+</html>
