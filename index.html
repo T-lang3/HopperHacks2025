@@ -21,7 +21,11 @@
   <h1>Take Picture, Place Dots, and Fade to Black</h1>
 
   <!-- Video element to display the camera feed -->
-  <video id="video" autoplay></video>
+  <video id="video" 
+  autoPlay={true}
+  playsInline={true}
+  muted={true}
+  ref={videoRef}></video>
 
   <!-- Button to capture picture -->
   <button id="captureBtn">Take Picture</button>
