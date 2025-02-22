@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Picture with Fade to Black and Dot Reveal</title>
   <style>
     #video {
@@ -15,9 +15,14 @@
     #fadeBtn {
       margin-top: 10px;
     }
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
   </style>
 </head>
 <body>
+
   <h1>Take Picture, Place Dots, and Fade to Black</h1>
 
   <!-- Video element to display the camera feed -->
